@@ -1,33 +1,9 @@
 # 线上游园会 Online Fun Fair
 
-八个中文聚会游戏合在一个网页里(单文件 `index.html`,不需要服务器):
+Upload `index.html` and `.nojekyll` to the root of your GitHub Pages repo (replace the old files). Open https://<user>.github.io/<repo>/ — one page, 8 games.
 
-| 游戏 | 说明 |
-|---|---|
-| 谁是卧底 | 536 组词,分中等 / 难 / 极难;房号 2 位 + 座位号 2 位 |
-| 谁是间谍(白板间谍) | 500 词,分简单 / 中等 / 困难 / 混合;5 位门牌号 |
-| 内鬼 | 500 词,分简单 / 中等 / 困难 / 混合;4 位门牌号 |
-| 阿瓦隆 | 房号 + 座位号发牌,主持人当裁判 |
-| 天黑请闭眼 | 房号 + 座位号发牌,主持人当法官 |
-| 谍报格 | 红蓝两队,队长给提示,25 张牌;5 位门牌号 |
-| 猜猜我是谁 | 头顶词:看得到别人的词,看不到自己的;6 位门牌号 |
-| 海龟汤 | 78 题,可按难度、清汤红汤、本格变格筛选 |
-
-支持简体、繁体、拼音。
-
-## 部署到 GitHub Pages
-1. 把 `index.html` 和 `.nojekyll` 放进仓库的 `online-fun-fair/` 文件夹(覆盖旧文件;旧的 `games/` 文件夹不再需要,可删除)。
-2. 仓库 Settings → Pages → Source 选 `main` 分支、根目录 `/`。
-3. 网址:`https://<用户名>.github.io/<仓库名>/online-fun-fair/`
-
-## 邀请链接
-- `…/online-fun-fair/#12` → 打开谁是卧底并带入房号 12
-- `…/online-fun-fair/#1234` → 打开内鬼并带入门牌号
-- `…/online-fun-fair/#12345` → 打开谁是间谍并带入门牌号
-- `…/online-fun-fair/#c12345` → 打开谍报格并带入门牌号
-- `…/online-fun-fair/#123456` → 打开猜猜我是谁并带入门牌号
-
-## 说明
-- 所有游戏都不需要服务器:每个人的手机根据房号和座位号自己算出身份。
-- 海龟汤在 GitHub Pages 上是单机模式(主持人一个人看汤底)。
-- 页面用到 Google Fonts,离线时会改用系统字体。
+- 语言 / Language: 简体 + English by default; toggles for 繁體, 拼音 and Deutsch (德语). Deutsch replaces the English line everywhere (hall, rules, word banks, puzzles, penalties).
+- 天黑请闭眼: classic (6–18, 屠边), double identity (6–12), deal-only; built-in timer.
+- 猜猜我是谁: no "reveal my word" option.
+- 惩罚转盘: after any game ends, tap the penalty button to open the 120-item wheel; "返回游戏" returns to where you were.
+- 界面风格 / Style: in the language card pick 经典游园会 (Classic fair) or 女巫模式 (Witch mode). Witch mode turns the hall into an illustrated candlelit table, retitled 奇异之夜 (The Strange Night), with the 8 games as cards around a star-chart; all games and the penalty wheel also switch to the dark look. A 巫 button in the in-game bar toggles it too.
